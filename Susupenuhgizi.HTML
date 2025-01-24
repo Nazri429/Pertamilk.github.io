@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertamilk - Menu Minuman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: #f39c12;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px; /* Ukuran logo, bisa disesuaikan */
+        }
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .menu-item {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item img {
+            max-width: 100%;
+            border-bottom: 3px solid #f39c12;
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+        .menu-item h3 {
+            margin: 15px 0 10px;
+            font-size: 20px;
+            color: #2c3e50;
+        }
+        .menu-item p {
+            font-size: 16px;
+            color: #555;
+            padding: 0 10px;
+            margin-bottom: 15px;
+        }
+        .cta-main {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .cta-button {
+            background: #e74c3c;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background: #c0392b;
+        }
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+        /* Banner Section */
+        .banner {
+            width: 100%;
+            height: 300px; /* Adjust the height as needed */
+            background-image: url('https://via.placeholder.com/1200x300'); /* Ganti dengan link gambar banner Pertamilk */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://imgur.com/8Dokwz8.png" alt="Logo Pertamilk"> <!-- Ganti dengan logo asli Pertamilk -->
+        Pertamilk - Nikmati Kesegarannya!
+    </header>
+
+    <!-- Banner Pertamilk -->
+    <div class="banner">
+        <!-- Gambar Banner Pertamilk ditampilkan disini --> <img src="https://imgur.com/xf7fG4F.jpg" alt="Banner Pertamilk">
+    </div>
+
+    <div class="hero">
+        <h1>"CUMA 1 TEGUK, KAMU AKAN SUKA!!!"</h1>
+        <p></p>
+    </div>
+
+    <div class="menu-container">
+        <!-- Matcha Green Tea -->
+        <div class="menu-item">
+            <img src="https://imgur.com/AidiHtI.jpg" alt="Matcha Green Tea">
+            <h3>Matcha Revive</h3>
+            <p>Teh hijau asli Jepang berpadu dengan susu segar, menciptakan rasa creamy yang menenangkan.</p>
+        </div>
+        <!-- White Coffee -->
+        <div class="menu-item">
+            <img src="https://imgur.com/L1UddNq.jpg" alt="White Coffee">
+            <h3>Espresso Fusion</h3>
+            <p>Kopi ringan dengan sentuhan susu creamy, sempurna untuk menemani pagi Anda. Segera coba!</p>
+        </div>
+        <!-- Cappuccino -->
+        <div class="menu-item">
+            <img src="https://imgur.com/SIuwtUN.jpg" alt="Cappuccino">
+            <h3>Coffee Monday</h3>
+            <p>Espresso, susu lembut, dan buih creamy di atasnya. Nikmati rasa klasik ini sekarang juga!</p>
+        </div>
+        <!-- Dark Choco -->
+        <div class="menu-item">
+            <img src="https://imgur.com/U3Wb5P0.jpg" alt="Dark Choco">
+            <h3>Original Flavor</h3>
+            <p>susu orginal tanpa toping dengan rasa autentik yang tebal dan memanjakan.</p>
+        </div>
+        <!-- Berry Boost -->
+        <div class="menu-item">
+            <img src="https://imgur.com/n0YT1oK.jpg" alt="Berry Boost">
+            <h3>Octane Choco</h3>
+            <p>"Minuman cokelat berenergi tinggi yang memberikan semangat dan kekuatan untuk menjalani hari".</p>
+        </div>
+        <!-- Mango Fuel -->
+        <div class="menu-item">
+            <img src="https://imgur.com/0EWi2Kk.jpg" alt="Mango Fuel">
+            <h3>Mango Fuel</h3>
+            <p>Kesegaran mangga tropis yang manis dan segar. Pilihan sempurna untuk hari yang panas!</p>
+        </div>
+        <!-- Banana Blitz -->
+        <div class="menu-item">
+            <img src="https://imgur.com/HhwT0OL.jpg" alt="Banana Blitz">
+            <h3>Banana Blitz</h3>
+            <p>Pisang manis dengan sentuhan madu, menciptakan smoothie yang lezat dan menyehatkan.</p>
+        </div>
+        <!-- Velvet Power -->
+        <div class="menu-item">
+            <img src="https://imgur.com/hUjsMO8.jpg" alt="Velvet Power">
+            <h3>Velvet Power</h3>
+            <p>Red velvet lembut dan manis yang membuat hari Anda lebih istimewa. Rasakan kemewahannya!</p>
+        </div>
+        <!-- Vanilla Vortex -->
+        <div class="menu-item">
+            <img src="https://imgur.com/3pJSnoI.jpg" alt="Vanilla Vortex">
+            <h3>Milk Tea</h3>
+            <p>Milk Tea bisa dibuat dengan berbagai jenis teh (teh hitam, hijau, oolong) dan pilihan susu (susu sapi, susu almond, atau susu kedelai), disesuaikan dengan selera.</p>
+        </div>
+        <!-- Nitro Gum -->
+        <div class="menu-item">
+            <img src="https://imgur.com/1IF9rl1.jpg" alt="Nitro Gum">
+            <h3>Nitro Gum</h3>
+            <p>Minuman dengan rasa mint segar dan sensasi "meledak" yang unik.</p>
+        </div>
+        <!-- Taro Turbo -->
+        <div class="menu-item">
+            <img src="https://imgur.com/x9yvfYV.jpg" alt="Taro Turbo">
+            <h3>Taro Turbo</h3>
+            <p>Manisnya taro berpadu dengan susu segar, menciptakan rasa khas yang tak tertandingi.</p>
+        </div>
+    </div>
+    <div class="cta-main">
+        <a href="https://gofood.link/u/v2ZjG" class="cta-button">AMBIL PROMONYA SEKARANG JUGA</a>
+    </div>
+    <footer>
+        &copy; 2024 Pertamilk. All Rights Reserved.
+    </footer>
+</body>
+</html>
